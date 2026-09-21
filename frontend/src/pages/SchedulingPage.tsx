@@ -4,7 +4,7 @@ import { workOrderApi } from '../api/workOrderApi';
 import { authApi } from '../api/authApi';
 import { WorkOrderDetailsModal } from '../components/modals/WorkOrderDetailsModal';
 import { SmartDispatchMatcherModal } from '../components/modals/SmartDispatchMatcherModal';
-import { ChevronLeft, ChevronRight, Plus, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 
 export const SchedulingPage: React.FC = () => {
   const [workOrders, setWorkOrders] = useState<WorkOrder[]>([]);

@@ -10,8 +10,6 @@ import { LogTimeModal } from '../components/modals/LogTimeModal';
 import { DigitalSignatureModal } from '../components/modals/DigitalSignatureModal';
 import {
   Play,
-  Pause,
-  CheckCircle,
   Wrench,
   Clock,
   MapPin,
@@ -19,8 +17,6 @@ import {
   Eye,
   PenTool,
   Camera,
-  CheckSquare,
-  Sparkles,
   ShieldCheck
 } from 'lucide-react';
 

@@ -14,9 +14,7 @@ import {
   Star,
   CheckCircle2,
   Truck,
-  Building,
-  MapPin,
-  Sparkles
+  MapPin
 } from 'lucide-react';
 
 export const CustomerPortalPage: React.FC = () => {

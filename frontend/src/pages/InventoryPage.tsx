@@ -10,8 +10,7 @@ import {
   RefreshCw,
   CheckCircle2,
   X,
-  Sparkles,
-  DollarSign
+  Sparkles
 } from 'lucide-react';
 
 export const InventoryPage: React.FC = () => {

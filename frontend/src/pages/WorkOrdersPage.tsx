@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import type { WorkOrder, WorkOrderStatus, WorkOrderPriority } from '../types/workOrder';
 import { workOrderApi } from '../api/workOrderApi';
 import { StatusChip } from '../components/common/StatusChip';
-import { PriorityChip } from '../components/common/PriorityChip';
 import { WorkOrderDetailsModal } from '../components/modals/WorkOrderDetailsModal';
 import { CreateWorkOrderModal } from '../components/modals/CreateWorkOrderModal';
 import { AssignTechnicianModal } from '../components/modals/AssignTechnicianModal';
@@ -12,7 +11,6 @@ import {
   Filter,
   UserPlus,
   Eye,
-  CheckSquare,
   ChevronDown,
   ChevronRight,
   LayoutList,
@@ -26,10 +24,8 @@ import {
   MapPin,
   ShieldAlert,
   User,
-  MoreHorizontal,
   Layers,
-  CheckCircle2,
-  AlertCircle
+  CheckCircle2
 } from 'lucide-react';
 
 type ViewMode = 'list' | 'board' | 'table' | 'calendar' | 'gantt';

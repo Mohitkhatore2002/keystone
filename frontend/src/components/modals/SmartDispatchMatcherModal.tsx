@@ -9,10 +9,7 @@ import {
   MapPin,
   ShieldCheck,
   Package,
-  Clock,
-  UserCheck,
-  Star,
-  CheckCircle2
+  Clock
 } from 'lucide-react';
 
 interface Props {

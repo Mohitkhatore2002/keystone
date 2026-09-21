@@ -62,7 +62,7 @@ export const ProfilePage: React.FC = () => {
         const cleanPhone = (data.phone && !data.phone.includes('9926734747')) 
           ? data.phone : '+1 (800) 555-0199';
 
-        const cleanLocation = (data.location && !data.location.equalsIgnoreCase?.('Indore') && data.location !== 'Indore') 
+        const cleanLocation = (data.location && data.location.toLowerCase() !== 'indore') 
           ? data.location : 'Central Operations Hub • Region 1';
 
         const cleanLink = (data.portfolioUrl && !data.portfolioUrl.includes('github.io')) 

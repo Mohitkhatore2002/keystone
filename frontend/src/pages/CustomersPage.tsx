@@ -11,9 +11,7 @@ import {
   Phone,
   Building,
   CheckCircle2,
-  X,
-  ChevronRight,
-  Globe
+  X
 } from 'lucide-react';
 
 export const CustomersPage: React.FC = () => {
