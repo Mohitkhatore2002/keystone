@@ -54,6 +54,32 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const res = await authApi.login(email, 'password123');
       login(res.token, res.user);
+    } catch {
+      // Seamless demo login fallback for static web hosting (Vercel)
+      let role: 'MANAGER' | 'DISPATCHER' | 'TECHNICIAN' | 'CUSTOMER' = 'DISPATCHER';
+      let name = 'Lead Dispatcher';
+      
+      if (email.includes('manager')) {
+        role = 'MANAGER';
+        name = 'Operations Manager';
+      } else if (email.includes('dispatcher')) {
+        role = 'DISPATCHER';
+        name = 'Lead Dispatcher';
+      } else if (email.includes('john') || email.includes('tech')) {
+        role = 'TECHNICIAN';
+        name = 'John Field Tech';
+      } else if (email.includes('acme') || email.includes('customer') || email.includes('client')) {
+        role = 'CUSTOMER';
+        name = 'Acme Facilities Lead';
+      }
+
+      const mockUser: User = {
+        id: 1,
+        name,
+        email,
+        role,
+      };
+      login('demo_jwt_token_keystone', mockUser);
     } finally {
       setLoading(false);
     }
