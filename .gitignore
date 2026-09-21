@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+backend/maven-dist/
+
+# Build outputs
+target/
+dist/
+build/
+*.jar
+*.war
+
+# Logs
+*.log
+logs/
+
+# IDE / OS files
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Temporary files & archives
+starter.zip
+frontend/generate_excel.js
+frontend/generate_excel.cjs
